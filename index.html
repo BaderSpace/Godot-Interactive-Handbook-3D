@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godot 4.7 — Interactive 3D Handbook</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- React 18 (production builds — faster than the .development ones) -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <!-- Babel compiles the JSX in the js/*.js files below, in the browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Tailwind (Play CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Three.js r128 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- PrismJS syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gdscript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-glsl.min.js"></script>
+</head>
+<body>
+
+<!-- Shown only if the scripts below never ran (opened via file:// instead of a server). -->
+<div id="boot-error">
+    <h1>Start a local server to open this handbook</h1>
+    <p>
+        The lessons live in separate <code>js/*.js</code> files, and browsers refuse to fetch
+        those over <code>file://</code>. Double-click <code>serve.bat</code> in this folder,
+        or run:
+    </p>
+    <p><code>python -m http.server 8000</code></p>
+    <p>then open <code>http://localhost:8000/</code>.</p>
+    <p style="color:#8a929a;font-size:0.9em">
+        If you are already on <code>http://localhost</code> and still see this, open the browser
+        console (F12) — a script failed to load.
+    </p>
+</div>
+
+<div id="root"></div>
+
+<script type="text/babel" src="js/three-scene.js"></script>
+<script type="text/babel" src="js/topics.js"></script>
+<script type="text/babel" src="js/demos-core.js"></script>
+<script type="text/babel" src="js/demos-motion.js"></script>
+<script type="text/babel" src="js/demos-physics.js"></script>
+<script type="text/babel" src="js/demos-visuals.js"></script>
+<script type="text/babel" src="js/demos-misc.js"></script>
+<script type="text/babel" src="js/app.js"></script>
+
+</body>
+</html>
