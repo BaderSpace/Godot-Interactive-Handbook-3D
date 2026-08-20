@@ -10,3 +10,5 @@ over `file://`. So it needs a local server:
 
 - **Windows:** double-click `serve.bat` — it starts Python's server and opens the page.
 - **Manually:** `python -m http.server 8000`, then open <http://localhost:8000/
+
+![alt text](image.png)
